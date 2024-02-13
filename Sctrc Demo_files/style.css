@@ -1,0 +1,758 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap+Condensed:wght@400;500;700&family=Karla:wght@400;500;700&family=Merriweather+Sans:wght@400;500;700&family=Open+Sans:wght@400;500;700&family=Roboto:wght@400;500;700&family=Rubik:wght@400;500;700&display=swap');
+
+.ffoonnttss{
+    font-family: 'Asap Condensed', sans-serif;
+    font-family: 'Karla', sans-serif;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Rubik', sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+p{
+    font-size: 15px;
+    line-height: 24px;
+}
+
+a, a:hover {
+    text-decoration: none;
+    font-weight: 400;
+}
+
+p, div{
+    font-weight: 400;
+}
+
+h1,h2,h3,h4,h5,h6,span,p{
+    color: var(--ftcolor);
+    transition: all 0.4s ease-in-out;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-weight: 600;
+    letter-spacing: 0.4px;
+}
+
+h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, h6:hover, span:hover, p:hover{
+    color: var(--hftcolor);
+}
+
+.material-symbols {
+    font-size: inherit;
+    line-height: inherit;
+}
+
+.material-symbols-outlined {
+    font-size: inherit;
+    line-height: inherit;
+    vertical-align: bottom;
+    font-weight: 600;
+}
+
+.p-15{
+    padding: 15px;
+}
+
+.porl{
+    position: relative;
+}
+
+.iconbg{
+    font-size: 30px;
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    text-align: center;
+    line-height: 60px;
+    background-color: var(--bgcolor);
+    color: var(--ftcolor);
+    transition-property: all !important;
+}
+
+.iconbg:hover{
+    background-color: var(--hbgcolor);
+    color: var(--hftcolor);
+}
+
+.sqiconbg {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--ftcolor);
+    background-color: var(--bgcolor);
+    transition: all 0.4s ease-in-out;
+}
+
+.sqiconbg:hover{
+    background-color: var(--hbgcolor);
+    color: var(--hftcolor);
+}
+
+a.ctbgcl{
+    background-color: var(--bgcolor);
+    color: var(--ftcolor);
+    border-color: var(--bdcolor);
+    transition: all 0.4s ease-in-out;
+}
+
+a.ctbgcl:hover{
+    background-color: var(--hbgcolor);
+    color: var(--hftcolor);
+    border-color: var(--hbdcolor);
+}
+
+.comimg img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.ecarddiv{
+    max-width: 400px;
+    min-width: 320px;
+    width: 100%;
+    margin: 0px auto;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.ecard-company{
+    margin-bottom:5px;
+}
+
+.a2a_kit {
+    display: inline-flex;
+    padding: 12px;
+    background-color: #efefef;
+    border-radius: 10px;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+    .a2a_kit button {
+        position: absolute;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        right: -20px;
+        top: -20px;
+        background-color: #efefef;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        width: 32px;
+        height: 32px;
+        border: none;
+        border-radius: 16px;
+    }
+        .a2a_kit button img {
+            max-width: 12px;
+        }
+
+/*--------------------------------------------------------------
+E-Card Elements Style
+--------------------------------------------------------------*/
+        .ecrd1 {
+            font-family: var(--font-family);
+            background-color: #fff;
+            position: relative;
+        }
+
+.ecrd1 .ec1dvd{
+    position: relative;
+    padding-bottom: 40px;
+}
+
+.ecrd1 .ec1img{
+    width: 100%;
+    height: 250px;
+    background-color: var(--pr-color);
+}
+
+.ecrd1 .ec1img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.ecrd1 .shape-divider{
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    z-index: 1;
+    -moz-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    transform: scaleX(-1);
+    -ms-filter: fliph;
+    filter: fliph;
+}
+
+.ecrd1 .shape-divider svg{
+    width: 100%;
+}
+
+.ecrd1 .ecrd1lg{
+    position: absolute;
+    left: 10px;
+    bottom: 40px;
+    width: 120px;
+    height: 60px;
+    z-index: 99;
+}
+
+.ecrd1 .ecrd1lg img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.ecrd1 .ecrd1image{
+    position: absolute;
+    right: 10px;
+    bottom: 0;
+    width: 120px;
+    height: 120px;
+    z-index: 99;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid var(--pr-color);
+    background-color: var(--pr-color);
+}
+
+.ecrd1 .ecrd1image img{
+    width: 100%;
+    height: 100%;
+    /*object-fit: contain;*/
+}
+
+.ecrd1 .ec1cnt{
+    padding: 0 15px 75px 15px;
+}
+
+.ecrd1 .ec1name{
+    font-size: 28px;
+    line-height: 38px;
+    margin: 15px auto 0px 0;
+    font-weight: 700;
+    color: #333;
+}
+
+.ecrd1 .ec1dept{
+    font-size: 18px;
+    line-height: 30px;
+    margin: 0px auto 5px 0;
+    color: var(--pr-color);
+    font-weight: 500;
+}
+
+.ecrd1 .ed1flex{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 5px 0;
+    text-decoration: none;
+}
+
+.ed1flex .ed1fimg{
+    width: 40px;
+    height: 40px;
+    background-color: var(--pr-color);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 23px;
+}
+
+.ed1flex .ed1fimg img{
+    width: 40px;
+    height: 20px;
+}
+
+.ed1flex .ed1text{
+    color: #333;
+    font-size: 16px;
+    line-height: 22px;
+    line-break: anywhere;
+}
+.demo-button {
+    position: fixed;
+    top: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: var(--pr-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-button {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: var(--pr-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-button:hover {
+    background-color: var(--pr-color);
+}
+
+.share-button {
+    margin-bottom: 20px;
+    z-index: 9;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: var(--pr-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.share-button:hover {
+    background-color: var(--pr-color);
+}
+
+.button-icon {
+    margin-right: 10px;
+}
+
+.button-icon img{
+    max-width: 24px;
+}
+
+
+
+
+.all-cards{
+    font-family: var(--font-family);
+    background-color: #fff;
+    position: relative;
+}
+
+.ecrd2 .ec2dvd{
+    position: relative;
+    padding-bottom: 60px;
+}
+
+.ecrd2 .ec2img{
+    width: 100%;
+    height: 250px;
+    border-bottom: 5px solid var(--pr-color);
+    box-sizing: content-box;
+}
+
+.ecrd2 .ec2img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.ecrd2 .ecrd2lg{
+    margin: 0 auto 15px auto;
+    width: 180px;
+    height: 100px;
+    z-index: 99;
+}
+
+.ecrd2 .ecrd2lg img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.ecrd2 .ecrd2image{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    width: 120px;
+    height: 120px;
+    z-index: 99;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid var(--pr-color);
+    background-color: var(--pr-color);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.ecrd2 .ecrd2image img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.ecrd2 .ec2cnt{
+    padding: 0 15px 65px 15px;
+}
+
+.ecard-name{
+    font-size: 28px;
+    line-height: 38px;
+    margin: 15px auto 0px 0;
+    font-weight: 700;    
+}
+
+.ecard-dept{
+    font-size: 18px;
+    line-height: 30px;
+    margin: 0px auto 5px 0;    
+    font-weight: 500;
+}
+
+.ecard-flex{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 5px 0;
+    text-decoration: none;
+}
+
+.ecard-icon{
+    width: 40px;
+    height: 40px;
+    background-color: var(--pr-color);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 23px;
+}
+
+.ecard-icon img{
+    width: 40px;
+    height: 20px;
+}
+
+.ecard-text{
+    color: #333;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.ecard-social-list1{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.ecard-social-list1 li{
+    padding-right: 10px;
+    display: inline-block;
+    float: left;
+}
+
+.card-sep{
+    width: 100%; 
+    border-bottom: 1px solid #d7d7d7; 
+    margin-bottom: 20px; 
+    margin-top: 10px;
+}
+
+
+
+.ecrd3 .ec3dvd{
+    position: relative;
+    height: 250px;
+    background: var(--pr-color);
+    clip-path: polygon(0 0, 100% 0, 100% 70%, 50% 100%, 0 70%);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.ecrd3 .ecard3banner{
+    width: 100%;
+    clip-path: polygon(0 0, 100% 0, 100% 70%, 50% 90%, 0% 70%);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.ecrd3 .logo-image{
+    position: relative;
+    height: 60px;
+}
+
+.ecrd3 .ecard3banner img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.ecrd3 .ecard3logo{
+    margin: 0 auto 15px auto;
+    width: 160px;
+    height: 100px;
+    z-index: 99;
+}
+
+.ecrd3 .ecard3logo img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.ecrd3 .ecard3image{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 5px solid var(--pr-color);
+    background-color: var(--pr-color);
+    bottom: 0;
+    width: 120px;
+    height: 120px;
+    z-index: 99;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.ecrd3 .ecard3image img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.ecrd3 .ecard-name{
+    color: #333;
+}
+
+.ecrd3 .ecard-dept{
+    color: var(--pr-color);
+}
+
+.ecrd3 .ec3cnt{
+    padding: 0 15px 65px 15px;
+}
+
+
+
+.ecrd4 .ec4dvd{
+    position: relative;
+    padding-bottom: 0px;
+}
+
+.ecrd4 .ec4img{
+    width: 100%;
+    height: 180px;
+    border-bottom: 5px solid var(--pr-color);
+    box-sizing: content-box;
+    position: relative;
+}
+
+.ecrd4 .ec4img img{
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+.ecrd4 .ecrd4lg{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 56px;
+    background-color: #fff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ecrd4 .ecrd4lg img{
+    max-width: 200px;
+    max-height: 100px;
+    width: auto;
+    height: auto;
+    opacity: 1;
+}
+
+.ecrd4 .ecrd4image{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -60px;
+    width: 120px;
+    height: 120px;
+    z-index: 99;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid var(--pr-color);
+    background-color: var(--pr-color);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.ecrd4 .ecrd4image img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.ecrd4 .ec4cnt{
+    padding: 0 15px 15px 15px;
+}
+
+.ecrd4 .ecard-name{
+    margin: 0;
+}
+
+.ecrd4 .maindiv{
+    padding: 80px 0 65px 0;
+    background-color: var(--pr-color);
+}
+
+.ecrd4 .ecard4style{
+    padding: 15px 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.ecrd4 .ecard4style:before{
+    content: '';
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 60px;
+    background-color: #fff;
+    border-radius: 0 12px 12px 0;
+    z-index: -1;
+}
+
+.ecrd4 .ecard-text{
+    margin-left: 35px;
+}
+
+.ecrd4 .ecard4style:after{
+    content: '';
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: calc(100% - 70px);
+    background-color: #fff;
+    border-radius: 12px 0 0 12px;
+    z-index: -1;
+}
+
+.ecrd4 .ecard-flex{
+    padding: 6px 0;
+}
+
+.ecrd4 .e4social{
+    display: inline-block;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.ecrd4 .ecard-name, .ecrd4 .ecard-dept, .ecrd4 .ecard-company{
+    color: #fff;
+    text-align: center;
+    padding-left:10px;
+    padding-right:10px;
+}
+
+.ecrd4 .contact-button, .ecrd4 .share-button, .ecrd4 .contact-button:hover, .ecrd4 .share-button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.ecrd4 .button-icon img {
+    filter: brightness(0.3);
+}
+
+
+
+
+
+.ecrd5{
+    box-shadow: none;
+    padding: 10px 10px 65px 10px;
+}
+
+.ecrd5 .ec51{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 10px;
+    padding: 20px 0 70px 0;
+    text-align: center;
+}
+
+.ecrd5 .logo5{
+    max-width: 200px;
+    max-height: 100px;
+}
+
+.ecrd5 .ec52{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 10px;
+    padding: 50px 10px 15px 10px;
+    text-align: center;
+    margin-top: 20px;
+    position: relative;
+    background-color: #333;
+}
+
+.ecrd5 .ecrd5image{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -70px;
+    width: 120px;
+    height: 120px;
+    z-index: 99;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid #fff;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.ecrd5 .ecrd5image img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.ecrd5 .ecard-dept, .ecrd5 .ecard-company{
+    color: #fff;
+}
+
+.ecrd5 .ecard-name{
+    color: #dfdfdf;
+}
+
+.ecrd5 .ecard-text{
+    margin-left: 15px;
+    color: #fff;
+    text-align: left;
+}
